@@ -1,0 +1,84 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Formats Lab</title>
+</head>
+<body>
+    <main>
+        <section class="sec1">
+        <figure>
+        <img src="image-high.jpg" alt="Image JPEG - High quality" height="250" width="250">
+        <figcaption>Image JPEG - High quality</figcaption>
+        </figure>
+        
+        <figure>
+        <img src="image-medium.jpg" alt="Image JPEG - medium quality" height="250" width="250">
+        <figcaption>Image JPEG - Medium Quality</figcaption>
+        </figure>
+        
+        <figure>
+        <img src="image-low.jpg" alt="Image JPEG - low quality" height="250" width="250">
+        <figcaption>Image JPEG - Low quality</figcaption>
+        </figure>
+    </figure>
+</sections>
+<sections class="sec2">
+    <figure>
+            <img src="image-8bits.png" alt="Image PNG - 8 bits" height="200" width="300">
+            <figcaption>Image PNG - 8 bits</figcaption>
+        </figure>
+        
+        <figure>
+            <img class="estilização" src="image-24bits.png" alt="Image PNG - 24 bits" height="200" width="300">
+            <figcaption>Image PNG - 24 bits</figcaption>
+        </figure>
+        
+        <figure>
+            <img class="estilização" src="image-compressed.png" alt="Image PNG - Compressed" height="200" width="300">
+            <figcaption>Image PNG - compressed</figcaption>
+        </figure>
+    </sections>
+    <sections class="sec3">
+        <figure>
+            <img src="animacao.gif" alt="Image GIF" height="200" width="200">
+            <figcaption>Image GIF - simple grafic</figcaption>
+        
+                <img src="animacao.gif" alt="Image GIF" height="200" width="200" class="bordered">
+                <figcaption>Image GIF - with border</figcaption>      
+    </sections>
+    <sections class="sec4">
+    </figure>
+
+    <figure>
+        <image src=1.svg widith="290" height="290">
+       <figcaption>Image SVG</figcaption>
+    </svg>
+  
+</figure>
+<p>Image svg / image png</p>
+<div class="imageSource">
+    <figure>
+            <img id="img2" class="bordered" src="1.svg" alt="Image SVG" height="150" width="150">
+            <figcaption>Image SVG</figcaption>
+    </figure>
+    </div>
+    <div class="imageSource">
+    <figure>
+            <img id="img1" class="bordered" src="1.png" alt="Image Raster" height="150" width="150">
+            <figcaption>Image Raster - Same grafic format JPEG</figcaption>
+    </figure>
+</div>
+<button id="scaleButton">Ampliar</button>
+<script>
+    document.getElementById("scaleButton").addEventListener("click", function () {
+        document.getElementById('img1').style.width = '500px';
+          document.getElementById('img2').style.width = '500px';
+        });
+</script>
+</sections>
+</main>
+    </body>
+</html>
